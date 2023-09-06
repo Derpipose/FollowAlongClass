@@ -1,0 +1,37 @@
+@server = https://localhost:7009
+
+#get all
+GET {{server}}/game
+
+
+###
+#Add
+POST {{server}}/game
+Content-type: application/json
+
+{
+  "name": "Crash Bandicoot",
+  "description": "I do not remember how Bandicoot games work",
+  "rating": 3
+}
+
+###
+#get game
+GET {{server}}/Game/get/1
+
+###
+#delete
+DELETE {{server}}/game?id=6
+
+
+####
+#update
+POST {{server}}/Game/update/2
+
+{
+    "id":5
+    "name": "BG3"
+    "description": "Whatever you want it to be, it's D&D!"
+    "rating": 5
+}
+
