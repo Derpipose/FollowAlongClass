@@ -19,6 +19,8 @@ Content-type: application/json
 #get game
 GET {{server}}/Game/get/1
 
+
+
 ###
 #delete
 DELETE {{server}}/game?id=6
